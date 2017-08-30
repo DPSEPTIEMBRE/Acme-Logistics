@@ -24,4 +24,6 @@
 	</tr>
 </table>
 
+<hr/>
+
 <p>To read the requisites of the project, please access folder 'docs'.</p>
