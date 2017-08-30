@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="fish/edit" extends="master.page">
+		<put-attribute name="title" value="Edit fish" />
+		<put-attribute name="body" value="/views/fish/edit.jsp" />
+	</definition>
+
+	<definition name="fish/create" extends="master.page">
+		<put-attribute name="title" value="New fish" />
+		<put-attribute name="body" value="/views/fish/create.jsp" />
+	</definition>
+
+	<definition name="fish/list" extends="master.page">
+		<put-attribute name="title" value="Fishsers" />
+		<put-attribute name="body" value="/views/fish/list.jsp" />
+	</definition>
+	
+	<definition name="fish/view" extends="master.page">
+		<put-attribute name="title" value="View fish" />
+		<put-attribute name="body" value="/views/fish/view.jsp" />
+	</definition>
+
+</tiles-definitions>

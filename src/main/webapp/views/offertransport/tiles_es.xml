@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="offertransport/create" extends="master.page">
+		<put-attribute name="title" value="Nueva oferta de transporte" />
+		<put-attribute name="body" value="/views/offertransport/create.jsp" />
+	</definition>
+
+	<definition name="offertransport/list" extends="master.page">
+		<put-attribute name="title" value="Mis ofertas de transporte" />
+		<put-attribute name="body" value="/views/offertransport/list.jsp" />
+	</definition>
+	
+	<definition name="offertransport/view" extends="master.page">
+		<put-attribute name="title" value="Ofertas de transporte" />
+		<put-attribute name="body" value="/views/offertransport/view.jsp" />
+	</definition>
+
+</tiles-definitions>

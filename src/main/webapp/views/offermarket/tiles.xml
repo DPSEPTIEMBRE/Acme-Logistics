@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="offermarket/edit" extends="master.page">
+		<put-attribute name="title" value="Edit offer" />
+		<put-attribute name="body" value="/views/offermarket/edit.jsp" />
+	</definition>
+
+	<definition name="offermarket/create" extends="master.page">
+		<put-attribute name="title" value="New offer" />
+		<put-attribute name="body" value="/views/offermarket/create.jsp" />
+	</definition>
+
+	<definition name="offermarket/list" extends="master.page">
+		<put-attribute name="title" value="Offers" />
+		<put-attribute name="body" value="/views/offermarket/list.jsp" />
+	</definition>
+	
+	<definition name="offermarket/search" extends="master.page">
+		<put-attribute name="title" value="Search offers" />
+		<put-attribute name="body" value="/views/offermarket/search.jsp" />
+	</definition>
+	
+	<definition name="offermarket/view" extends="master.page">
+		<put-attribute name="title" value="Offer" />
+		<put-attribute name="body" value="/views/offermarket/view.jsp" />
+	</definition>
+
+	<definition name="offermarket/view_async" template="/views/offermarket/view_async.jsp" />
+	<definition name="offermarket/search_async" template="/views/offermarket/search_async.jsp" />
+
+</tiles-definitions>

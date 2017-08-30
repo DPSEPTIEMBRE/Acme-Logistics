@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="buyer/edit" extends="master.page">
+		<put-attribute name="title" value="Edit my data" />
+		<put-attribute name="body" value="/views/buyer/edit.jsp" />
+	</definition>
+
+	<definition name="buyer/create" extends="master.page">
+		<put-attribute name="title" value="Register as buyer" />
+		<put-attribute name="body" value="/views/buyer/create.jsp" />
+	</definition>
+
+	<definition name="buyer/list" extends="master.page">
+		<put-attribute name="title" value="Buyers" />
+		<put-attribute name="body" value="/views/buyer/list.jsp" />
+	</definition>
+
+</tiles-definitions>

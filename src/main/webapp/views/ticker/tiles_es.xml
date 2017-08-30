@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="ticker/list" extends="master.page">
+		<put-attribute name="title" value="Tickers" />
+		<put-attribute name="body" value="/views/ticker/list.jsp" />
+	</definition>
+	
+	<definition name="ticker/view" extends="master.page">
+		<put-attribute name="title" value="Ticker" />
+		<put-attribute name="body" value="/views/ticker/view.jsp" />
+	</definition>
+
+</tiles-definitions>
