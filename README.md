@@ -26,4 +26,4 @@
 
 <hr/>
 
-<p>To read the requisites of the project, please access folder 'docs'.</p>
+<p>To read the requirements of the project, please access folder 'docs'.</p>
