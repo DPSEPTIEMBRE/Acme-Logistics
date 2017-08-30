@@ -22,6 +22,57 @@
 			Add your own converters using entries of the following form: 
 			<bean class="converters.Class1ToClass2" /> 
 		-->
+		<bean class="converters.ActorToStringConverter"/>
+		<bean class="converters.AdministratorToStringConverter"/>
+		<bean class="converters.AuthorityToStringConverter"/>
+		<bean class="converters.BusinessmanToStringConverter"/>
+		<bean class="converters.BuyerToStringConverter"/>
+		<bean class="converters.CommentToStringConverter"/>
+		<bean class="converters.CreditCardToStringConverter"/>
+		<bean class="converters.DailyCatchToStringConverter"/>
+		<bean class="converters.FishermanToStringConverter"/>
+		<bean class="converters.FishToStringConverter"/>
+		<bean class="converters.FolderToStringConverter"/>
+		<bean class="converters.MailMessageToStringConverter"/>
+		<bean class="converters.OfferMarketToStringConverter"/>
+		<bean class="converters.OfferTransportToStringConverter"/>
+		<bean class="converters.PropertyToStringConverter"/>
+		<bean class="converters.SpamWordToStringConverter"/>
+		<bean class="converters.StoreToStringConverter"/>
+		<bean class="converters.TickerToStringConverter"/>
+		<bean class="converters.TransporterToStringConverter"/>
+		<bean class="converters.WallToStringConverter"/>
+		<bean class="converters.BusinesOrderToStringConverter"/>
+		<bean class="converters.UserAccountToStringConverter"/>
+		<bean class="converters.ProductToStringConverter"/>
+		<bean class="converters.MeasureToStringConverter"/>
+		
+		
+		
+		<bean class="converters.StringToActorConverter"/>
+		<bean class="converters.StringToAdministratorConverter"/>
+		<bean class="converters.StringToAuthorityConverter"/>
+		<bean class="converters.StringToBusinessmanConverter"/>
+		<bean class="converters.StringToBuyerConverter"/>
+		<bean class="converters.StringToCommentConverter"/>
+		<bean class="converters.StringToCreditCardConverter"/>
+		<bean class="converters.StringToDailyCatchConverter"/>
+		<bean class="converters.StringToFishermanConverter"/>
+		<bean class="converters.StringToFishConverter"/>
+		<bean class="converters.StringToFolderConverter"/>
+		<bean class="converters.StringToMailMessageConverter"/>
+		<bean class="converters.StringToOfferMarketConverter"/>
+		<bean class="converters.StringToOfferTransportConverter"/>
+		<bean class="converters.StringToPropertyConverter"/>
+		<bean class="converters.StringToSpamWordConverter"/>
+		<bean class="converters.StringToStoreConverter"/>
+		<bean class="converters.StringToTickerConverter"/>
+		<bean class="converters.StringToTransporterConverter"/>
+		<bean class="converters.StringToWallConverter"/>
+		<bean class="converters.StringToBussinesOrderConverter"/>
+		<bean class="converters.StringToUserAccountConverter"/>
+		<bean class="converters.StringToProductConverter"/>
+		<bean class="converters.StringToMeasureConverter"/>
 	</util:list>
 	
 </beans>

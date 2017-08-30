@@ -5,7 +5,7 @@
 
 <table class="table">
 	<tr class="par">
-		<td>Juan José Valle Zarza</td>
+		<td><b>Juan José Valle Zarza</b></td>
 	</tr>
 	<tr class="impar">
 		<td>Adrián Sánchez Reyes</td>

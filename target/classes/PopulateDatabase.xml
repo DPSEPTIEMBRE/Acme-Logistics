@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- 
- * PopulateDatabase.xml
- *
- * Copyright (C) 2017 Universidad de Sevilla
- * 
- * The use of this project is hereby constrained to the conditions of the 
- * TDG Licence, a copy of which you may download from 
- * http://www.tdg-seville.info/License.html
- -->
+<!-- * PopulateDatabase.xml * * Copyright (C) 2017 Universidad de Sevilla 
+	* * The use of this project is hereby constrained to the conditions of the 
+	* TDG Licence, a copy of which you may download from * http://www.tdg-seville.info/License.html -->
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	">
-	
+
 	<!-- User accounts -->
 
 	<bean id="userAccount1" class="security.UserAccount">
@@ -24,39 +18,1878 @@
 		<property name="authorities">
 			<list>
 				<bean class="security.Authority">
-					<property name="authority" value="ADMIN" />
+					<property name="authority" value="ADMINISTRATOR" />
 				</bean>
 			</list>
 		</property>
 	</bean>
 
 	<bean id="userAccount2" class="security.UserAccount">
-		<property name="username" value="customer" />
-		<property name="password" value="91ec1f9324753048c0096d036a694f86" />
+		<property name="username" value="fisherman1" />
+		<property name="password" value="882aee9871aa64cabe53aa56ed8a5b1d" />
 		<property name="authorities">
 			<list>
 				<bean class="security.Authority">
-					<property name="authority" value="CUSTOMER" />
+					<property name="authority" value="FISHERMAN" />
 				</bean>
 			</list>
 		</property>
 	</bean>
 
 	<bean id="userAccount3" class="security.UserAccount">
-		<property name="username" value="super" />
-		<property name="password" value="1b3231655cebb7a1f783eddf27d254ca" />
+		<property name="username" value="fisherman2" />
+		<property name="password" value="36e5595b7d02333b5169b4b85fc03e95" />
 		<property name="authorities">
 			<list>
 				<bean class="security.Authority">
-					<property name="authority" value="ADMIN" />
-				</bean>
-				<bean class="security.Authority">
-					<property name="authority" value="CUSTOMER" />
+					<property name="authority" value="FISHERMAN" />
 				</bean>
 			</list>
 		</property>
 	</bean>
+
+	<bean id="userAccount4" class="security.UserAccount">
+		<property name="username" value="fisherman3" />
+		<property name="password" value="48d8e31636708c6206d81d80648056a2" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="FISHERMAN" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount5" class="security.UserAccount">
+		<property name="username" value="buyer1" />
+		<property name="password" value="5cbd9d629096842872fdc665d2d03ba3" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount6" class="security.UserAccount">
+		<property name="username" value="buyer2" />
+		<property name="password" value="ba71d29d4efdd8753c516db594fab6d8" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount7" class="security.UserAccount">
+		<property name="username" value="buyer3" />
+		<property name="password" value="3cb52c98f366dad959eb21181107c7a7" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUYER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount8" class="security.UserAccount">
+		<property name="username" value="businessman1" />
+		<property name="password" value="632c2797159252f221ee9b85c059610c" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUSINESSMAN" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount9" class="security.UserAccount">
+		<property name="username" value="businessman2" />
+		<property name="password" value="94d7bf4bc7fd209c5b6f10b701bda752" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUSINESSMAN" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount10" class="security.UserAccount">
+		<property name="username" value="businessman3" />
+		<property name="password" value="248a99052712131bb838cf189f73d350" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="BUSINESSMAN" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount11" class="security.UserAccount">
+		<property name="username" value="transporter1" />
+		<property name="password" value="f317f2b7bf598eeea034ba7601a79103" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="TRANSPORTER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount12" class="security.UserAccount">
+		<property name="username" value="transporter2" />
+		<property name="password" value="110940609dd9168c4fc67b141ae4f055" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="TRANSPORTER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="userAccount13" class="security.UserAccount">
+		<property name="username" value="transporter3" />
+		<property name="password" value="4385f0854c6b975a9b5c4a354d680a3f" />
+		<property name="authorities">
+			<list>
+				<bean class="security.Authority">
+					<property name="authority" value="TRANSPORTER" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- Other domain beans come here -->
+
+
+
+
+	<bean id="administrator" class="domain.Administrator">
+		<property name="actorName" value="Juan Carlos" />
+		<property name="surname" value="lopez Muñoz" />
+		<property name="numberidentif" value="44689767K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 8788" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="juancarlos@hotmail.com" />
+		<property name="userAccount" ref="userAccount1" />
+		<property name="creditCard" ref="creditCard1" />
+		<property name="folders">
+			<list>
+
+				<ref bean="administratorInbox" />
+				<ref bean="administratorOutbox" />
+				<ref bean="administratorTrashbox" />
+				<ref bean="administratorSpambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman1" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall1" />
+	</bean>
+
+	<bean id="fisherman1" class="domain.Fisherman">
+		<property name="actorName" value="Juan" />
+		<property name="surname" value="Valle" />
+		<property name="numberidentif" value="44689267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 3788" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="jj@hotmail.com" />
+		<property name="userAccount" ref="userAccount2" />
+		<property name="creditCard" ref="creditCard2" />
+		<property name="folders">
+			<list>
+
+				<ref bean="fisherman1Inbox" />
+				<ref bean="fisherman1Outbox" />
+				<ref bean="fisherman1Trashbox" />
+				<ref bean="fisherman1Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall2" />
+
+
+		<property name="dailyCatchs">
+			<list>
+				<ref bean="dailycatch1" />
+				<ref bean="dailycatch4" />
+			</list>
+		</property>
+
+		<property name="offerMarkets">
+			<list>
+				<ref bean="offermarket1" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="fisherman2" class="domain.Fisherman">
+		<property name="actorName" value="Juan" />
+		<property name="surname" value="Valle" />
+		<property name="numberidentif" value="44689267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 3788" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="jj@hotmail.com" />
+		<property name="userAccount" ref="userAccount3" />
+		<property name="creditCard" ref="creditCard3" />
+		<property name="folders">
+			<list>
+
+				<ref bean="fisherman2Inbox" />
+				<ref bean="fisherman2Outbox" />
+				<ref bean="fisherman2Trashbox" />
+				<ref bean="fisherman2Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall3" />
+
+		<property name="dailyCatchs">
+			<list>
+				<ref bean="dailycatch2" />
+			</list>
+		</property>
+
+		<property name="offerMarkets">
+			<list>
+				<ref bean="offermarket2" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fisherman3" class="domain.Fisherman">
+		<property name="actorName" value="Laura" />
+		<property name="surname" value="Padial" />
+		<property name="numberidentif" value="44289267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 3488" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="laura@hotmail.com" />
+		<property name="userAccount" ref="userAccount4" />
+		<property name="creditCard" ref="creditCard4" />
+		<property name="folders">
+			<list>
+
+				<ref bean="fisherman3Inbox" />
+				<ref bean="fisherman3Outbox" />
+				<ref bean="fisherman3Trashbox" />
+				<ref bean="fisherman3Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall4" />
+
+		<property name="dailyCatchs">
+			<list>
+				<ref bean="dailycatch3" />
+			</list>
+		</property>
+
+		<property name="offerMarkets">
+			<list>
+				<ref bean="offermarket3" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dailycatch1" class="domain.DailyCatch">
+		<property name="quantity" value="5.0" />
+		<property name="measure" ref="KG" />
+		<property name="fisherman" ref="fisherman1" />
+		<property name="fish" ref="fish1" />
+
+	</bean>
+
+	<bean id="dailycatch4" class="domain.DailyCatch">
+		<property name="quantity" value="7.0" />
+		<property name="measure" ref="KG" />
+		<property name="fisherman" ref="fisherman1" />
+		<property name="fish" ref="fish2" />
+
+	</bean>
+
+	<bean id="dailycatch2" class="domain.DailyCatch">
+		<property name="quantity" value="5.0" />
+		<property name="measure" ref="KG" />
+		<property name="fisherman" ref="fisherman2" />
+		<property name="fish" ref="fish2" />
+
+	</bean>
+
+	<bean id="dailycatch3" class="domain.DailyCatch">
+		<property name="quantity" value="5.0" />
+		<property name="measure" ref="KG" />
+		<property name="fisherman" ref="fisherman3" />
+		<property name="fish" ref="fish2" />
+
+	</bean>
+
+	<bean id="ticker1" class="domain.Ticker">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish">
+			<list>
+				<ref bean="fish1" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="ticker2" class="domain.Ticker">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish">
+			<list>
+				<ref bean="fish2" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="ticker3" class="domain.Ticker">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish">
+			<list>
+				<ref bean="fish2" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="buyer1" class="domain.Buyer">
+		<property name="actorName" value="Adrian" />
+		<property name="surname" value="Sanchez" />
+		<property name="numberidentif" value="42289267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 2488" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="adrian@hotmail.com" />
+		<property name="userAccount" ref="userAccount5" />
+		<property name="creditCard" ref="creditCard5" />
+		<property name="folders">
+			<list>
+
+				<ref bean="buyer1Inbox" />
+				<ref bean="buyer1Outbox" />
+				<ref bean="buyer1Trashbox" />
+				<ref bean="buyer1Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall5" />
+
+		<property name="tickers">
+			<list>
+				<ref bean="ticker1" />
+			</list>
+		</property>
+
+
+	</bean>
+
+
+
+	<bean id="buyer2" class="domain.Buyer">
+		<property name="actorName" value="Jesus" />
+		<property name="surname" value="Escobar" />
+		<property name="numberidentif" value="42289267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 2428" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="jesus@hotmail.com" />
+		<property name="userAccount" ref="userAccount6" />
+		<property name="creditCard" ref="creditCard6" />
+		<property name="folders">
+			<list>
+
+				<ref bean="buyer2Inbox" />
+				<ref bean="buyer2Outbox" />
+				<ref bean="buyer2Trashbox" />
+				<ref bean="buyer2Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall6" />
+
+		<property name="tickers">
+			<list>
+				<ref bean="ticker2" />
+				<ref bean="ticker3" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="buyer3" class="domain.Buyer">
+		<property name="actorName" value="Pablo" />
+		<property name="surname" value="Escobar" />
+		<property name="numberidentif" value="42689267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 2228" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="pablo@hotmail.com" />
+		<property name="userAccount" ref="userAccount7" />
+		<property name="creditCard" ref="creditCard7" />
+		<property name="folders">
+			<list>
+
+				<ref bean="buyer3Inbox" />
+				<ref bean="buyer3Outbox" />
+				<ref bean="buyer3Trashbox" />
+				<ref bean="buyer3Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="businessman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall7" />
+
+		<property name="tickers">
+			<list>
+
+			</list>
+		</property>
+	</bean>
+
+	<bean id="businessman1" class="domain.Businessman">
+		<property name="actorName" value="Felix" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42689267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (88) 2223" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="felix@hotmail.com" />
+		<property name="userAccount" ref="userAccount8" />
+		<property name="creditCard" ref="creditCard8" />
+		<property name="folders">
+			<list>
+
+				<ref bean="businessman1Inbox" />
+				<ref bean="businessman1Outbox" />
+				<ref bean="businessman1Trashbox" />
+				<ref bean="businessman1Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall8" />
+
+		<property name="orders">
+			<list>
+				<ref bean="bussinesOrder1" />
+				<ref bean="bussinesOrder2" />
+			</list>
+		</property>
+		<property name="store" ref="store1" />
+	</bean>
+
+	<bean id="businessman2" class="domain.Businessman">
+		<property name="actorName" value="jose" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42289267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (28) 2223" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="jose@hotmail.com" />
+		<property name="userAccount" ref="userAccount9" />
+		<property name="creditCard" ref="creditCard9" />
+		<property name="folders">
+			<list>
+
+				<ref bean="businessman2Inbox" />
+				<ref bean="businessman2Outbox" />
+				<ref bean="businessman2Trashbox" />
+				<ref bean="businessman2Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall9" />
+
+		<property name="orders">
+			<list>
+				<ref bean="bussinesOrder3" />
+			</list>
+		</property>
+
+		<property name="store" ref="store2" />
+	</bean>
+
+	<bean id="businessman3" class="domain.Businessman">
+		<property name="actorName" value="luis" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42389267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (28) 2223" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="luis@hotmail.com" />
+		<property name="userAccount" ref="userAccount10" />
+		<property name="creditCard" ref="creditCard10" />
+		<property name="folders">
+			<list>
+
+				<ref bean="businessman3Inbox" />
+				<ref bean="businessman3Outbox" />
+				<ref bean="businessman3Trashbox" />
+				<ref bean="businessman3Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall10" />
+
+		<property name="orders">
+			<list>
+
+			</list>
+		</property>
+
+		<property name="store" ref="store3" />
+	</bean>
+
+
+
+
+
+
+
+	<bean id="bussinesOrder1" class="domain.BusinessOrder">
+		<property name="storeIdentif" value="2" />
+		<property name="vat" value="2322" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="devilered" value="true" />
+		<property name="fish">
+			<list><ref bean="fish1"/></list>
+		</property>
+		<property name="OfferTransport" ref="offerTransport1" />
+		<property name="day" value="27/08/2017" />
+	</bean>
+
+	<bean id="bussinesOrder2" class="domain.BusinessOrder">
+		<property name="storeIdentif" value="2" />
+		<property name="vat" value="2322" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="devilered" value="true" />
+		<property name="fish">
+			<list><ref bean="fish1"/></list>
+		</property>
+		<property name="OfferTransport" ref="offerTransport2" />
+		<property name="day" value="27/08/2017" />
+
+	</bean>
+
+	<bean id="bussinesOrder3" class="domain.BusinessOrder">
+		<property name="storeIdentif" value="2" />
+		<property name="vat" value="2322" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="devilered" value="true" />
+		<property name="fish">
+			<list>
+				<ref bean="fish1" />
+				<ref bean="fish2" />
+			</list>
+		</property>
+		<property name="OfferTransport" ref="offerTransport3" />
+		<property name="day" value="26/08/2017" />
+
+	</bean>
+
+
+	<bean id="store1" class="domain.Store">
+
+		<property name="name" value="Marisco recio" />
+		<property name="postalAddress" value="40100" />
+		<property name="city" value="Sevilla" />
+		<property name="VAT" value="3333" />
+		<property name="comments">
+			<list>
+				<ref bean="comment1" />
+				<ref bean="comment2" />
+
+			</list>
+
+		</property>
+
+		<property name="products">
+			<list>
+				<ref bean="product1" />
+				<ref bean="product2" />
+			</list>
+
+		</property>
+
+
+
+	</bean>
+
+	<bean id="store2" class="domain.Store">
+
+		<property name="name" value="Marisco alfonso" />
+		<property name="postalAddress" value="40100" />
+		<property name="city" value="Sevilla" />
+		<property name="VAT" value="3333" />
+		<property name="comments">
+			<list>
+				<ref bean="comment3" />
+
+			</list>
+
+		</property>
+
+		<property name="products">
+			<list>
+				<ref bean="product3" />
+			</list>
+
+		</property>
+
+
+
+	</bean>
+
+	<bean id="store3" class="domain.Store">
+
+		<property name="name" value="Marisco elene" />
+		<property name="postalAddress" value="40100" />
+		<property name="city" value="Sevilla" />
+		<property name="VAT" value="3333" />
+		<property name="comments">
+			<list>
+				<ref bean="comment4" />
+			</list>
+
+		</property>
+
+		<property name="products">
+			<list></list>
+
+		</property>
+	</bean>
+
+	<bean id="comment1" class="domain.Comment">
+		<property name="created" value="23/08/2017" />
+		<property name="body" value="hola mundo" />
+
+
+
+	</bean>
+
+	<bean id="comment2" class="domain.Comment">
+		<property name="created" value="23/08/2017" />
+		<property name="body" value="hola mundo2" />
+
+
+	</bean>
+
+	<bean id="comment3" class="domain.Comment">
+		<property name="created" value="23/08/2017" />
+		<property name="body" value="hola mundo3" />
+
+
+	</bean>
+
+	<bean id="comment4" class="domain.Comment">
+		<property name="created" value="23/08/2017" />
+		<property name="body" value="hola mundo4" />
+
+
+	</bean>
+
+	<bean id="product1" class="domain.Product">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish" ref="fish1" />
+		<property name="comments">
+			<list>
+				<ref bean="comment1" />
+				<ref bean="comment2" />
+
+			</list>
+
+		</property>
+	</bean>
+
+	<bean id="product2" class="domain.Product">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish" ref="fish2" />
+		<property name="comments">
+			<list>
+				<ref bean="comment3" />
+				<ref bean="comment4" />
+
+
+			</list>
+
+		</property>
+	</bean>
+
+	<bean id="product3" class="domain.Product">
+		<property name="quantity" value="2.0" />
+		<property name="price" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="fish" ref="fish3" />
+		<property name="comments">
+			<list>
+
+			</list>
+
+		</property>
+	</bean>
+
+	<bean id="offerTransport1" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4444-22-AA" />
+		<property name="origin" value="Sevilla" />
+		<property name="destination" value="Madrid" />
+		<property name="chargeMax" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="2.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="28/09/2018" />
+		<property name="available" value="false" />
+	</bean>
+
+	<bean id="offerTransport2" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4444-22-AB" />
+		<property name="origin" value="Sevilla" />
+		<property name="destination" value="Madrid" />
+		<property name="chargeMax" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="2.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="28/09/2018" />
+		<property name="available" value="false" />
+	</bean>
+
+
+	<bean id="offerTransport3" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4444-22-AC" />
+		<property name="origin" value="Sevilla" />
+		<property name="destination" value="Madrid" />
+		<property name="chargeMax" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="2.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="28/09/2018" />
+		<property name="available" value="false" />
+	</bean>
 	
-	<!-- Other domain beans come here -->	
+	<bean id="offerTransport4" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4894-22-AA" />
+		<property name="origin" value="Sevilla" />
+		<property name="destination" value="Madrid" />
+		<property name="chargeMax" value="2.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="2.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="30/09/2018" />
+		<property name="available" value="true" />
+	</bean>
 	
+	<bean id="offerTransport5" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4444-22-AA" />
+		<property name="origin" value="Granada" />
+		<property name="destination" value="Madrid" />
+		<property name="chargeMax" value="10.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="120.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="28/10/2018" />
+		<property name="available" value="true" />
+	</bean>
+	
+	<bean id="offerTransport6" class="domain.OfferTransport">
+		<property name="transporterIdentif" value="4444-22-AA" />
+		<property name="origin" value="Sevilla" />
+		<property name="destination" value="Andromeda" />
+		<property name="chargeMax" value="20.0" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="2000.0" />
+		<property name="periodeStart" value="22/09/2018" />
+		<property name="periodeEnd" value="28/09/2050" />
+		<property name="available" value="true" />
+	</bean>
+
+	<bean id="transporter1" class="domain.Transporter">
+		<property name="actorName" value="luis" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42389267K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (28) 2223" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="luis@hotmail.com" />
+		<property name="userAccount" ref="userAccount11" />
+		<property name="creditCard" ref="creditCard11" />
+		<property name="folders">
+			<list>
+
+				<ref bean="transporter1Inbox" />
+				<ref bean="transporter1Outbox" />
+				<ref bean="transporter1Trashbox" />
+				<ref bean="transporter1Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall11" />
+
+		<property name="offerTransport">
+			<list>
+				<ref bean="offerTransport1" />
+				<ref bean="offerTransport2" />
+				<ref bean="offerTransport4" />
+				<ref bean="offerTransport5" />
+				<ref bean="offerTransport6" />
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="transporter2" class="domain.Transporter">
+		<property name="actorName" value="pepe" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42389367K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (68) 2223" />
+		<property name="postalAddress" value="41400" />
+		<property name="email" value="pepe@hotmail.com" />
+		<property name="userAccount" ref="userAccount12" />
+		<property name="creditCard" ref="creditCard12" />
+		<property name="folders">
+			<list>
+
+				<ref bean="transporter2Inbox" />
+				<ref bean="transporter2Outbox" />
+				<ref bean="transporter2Trashbox" />
+				<ref bean="transporter2Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall12" />
+
+		<property name="offerTransport">
+			<list>
+				<ref bean="offerTransport3" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="transporter3" class="domain.Transporter">
+		<property name="actorName" value="Manuel" />
+		<property name="surname" value="Rodriguez" />
+		<property name="numberidentif" value="42389237K" />
+		<property name="city" value="Sevilla" />
+		<property name="phone" value="+34 (28) 2233" />
+		<property name="postalAddress" value="41100" />
+		<property name="email" value="manuel@hotmail.com" />
+		<property name="userAccount" ref="userAccount13" />
+		<property name="creditCard" ref="creditCard13" />
+		<property name="folders">
+			<list>
+
+				<ref bean="transporter3Inbox" />
+				<ref bean="transporter3Outbox" />
+				<ref bean="transporter3Trashbox" />
+				<ref bean="transporter3Spambox" />
+			</list>
+		</property>
+
+		<property name="follower">
+			<list>
+
+				<ref bean="fisherman2" />
+				<ref bean="fisherman3" />
+
+			</list>
+		</property>
+
+		<property name="followed">
+			<list>
+
+				<ref bean="fisherman1" />
+				<ref bean="fisherman2" />
+
+			</list>
+		</property>
+		<property name="wall" ref="wall13" />
+
+		<property name="offerTransport">
+			<list>
+
+			</list>
+		</property>
+
+	</bean>
+
+	<!-- Datatypes -->
+
+	<bean id="LOW" class="domain.Priority">
+		<property name="value" value="LOW" />
+	</bean>
+	<bean id="HIGH" class="domain.Priority">
+		<property name="value" value="HIGH" />
+	</bean>
+	<bean id="NEUTRAL" class="domain.Priority">
+		<property name="value" value="NEUTRAL" />
+	</bean>
+
+	<bean id="KG" class="domain.Measure">
+		<property name="value" value="KG" />
+	</bean>
+	<bean id="POUNDS" class="domain.Priority">
+		<property name="value" value="POUNDS" />
+	</bean>
+
+	<!-- /Datatypes -->
+
+	<bean id="spamWord1" class="domain.SpamWord">
+		<property name="name" value="viagra" />
+	</bean>
+	<bean id="spamWord2" class="domain.SpamWord">
+		<property name="name" value="cialis" />
+	</bean>
+	<bean id="spamWord3" class="domain.SpamWord">
+		<property name="name" value="sex" />
+	</bean>
+	<bean id="spamWord4" class="domain.SpamWord">
+		<property name="name" value="love" />
+	</bean>
+
+	<bean id="administratorInbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman1Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list>
+				<ref bean="mailMessage1" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fisherman2Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list>
+				<ref bean="mailMessage2" />
+
+			</list>
+		</property>
+	</bean>
+	<bean id="fisherman3Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer1Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list>
+				<ref bean="mailMessage3" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="buyer2Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer3Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman1Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman2Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman3Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter1Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter2Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter3Inbox" class="domain.Folder">
+		<property name="folderName" value="inbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+
+	<bean id="administratorOutbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman1Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman2Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+	<bean id="fisherman3Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer1Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list>
+				<ref bean="mailMessage4" />
+				<ref bean="mailMessage5" />
+				<ref bean="mailMessage6" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="buyer2Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer3Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman1Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman2Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman3Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter1Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter2Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter3Outbox" class="domain.Folder">
+		<property name="folderName" value="outbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="administratorTrashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman1Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman2Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+	<bean id="fisherman3Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer1Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer2Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer3Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman1Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman2Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman3Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter1Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter2Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter3Trashbox" class="domain.Folder">
+		<property name="folderName" value="trashbox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+
+	<bean id="administratorSpambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman1Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="fisherman2Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+	<bean id="fisherman3Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer1Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer2Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="buyer3Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman1Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman2Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="businessman3Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter1Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter2Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+	<bean id="transporter3Spambox" class="domain.Folder">
+		<property name="folderName" value="spambox" />
+		<property name="messages">
+			<list></list>
+		</property>
+	</bean>
+
+
+	<bean id="creditCard1" class="domain.CreditCard">
+		<property name="holder" value="holder name 1" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard2" class="domain.CreditCard">
+		<property name="holder" value="holder name 2" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard3" class="domain.CreditCard">
+		<property name="holder" value="holder name 3" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard4" class="domain.CreditCard">
+		<property name="holder" value="holder name 4" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard5" class="domain.CreditCard">
+		<property name="holder" value="holder name 5" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard6" class="domain.CreditCard">
+		<property name="holder" value="holder name 6" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard7" class="domain.CreditCard">
+		<property name="holder" value="holder name 7" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard8" class="domain.CreditCard">
+		<property name="holder" value="holder name 8" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard9" class="domain.CreditCard">
+		<property name="holder" value="holder name 9" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard10" class="domain.CreditCard">
+		<property name="holder" value="holder name 10" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard11" class="domain.CreditCard">
+		<property name="holder" value="holder name 11" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard12" class="domain.CreditCard">
+		<property name="holder" value="holder name 12" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+	<bean id="creditCard13" class="domain.CreditCard">
+		<property name="holder" value="holder name 13" />
+		<property name="brand" value="AMEX" />
+		<property name="cardNumber" value="4620252787040202" />
+		<property name="expMonth" value="12" />
+		<property name="expYear" value="2020" />
+		<property name="cvv" value="123" />
+	</bean>
+
+
+	<bean id="mailMessage1" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="urgent" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="HIGH" />
+		<property name="sender" ref="fisherman1" />
+		<property name="recipient" ref="fisherman2" />
+	</bean>
+
+	<bean id="mailMessage2" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="hello" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="NEUTRAL" />
+		<property name="sender" ref="fisherman2" />
+		<property name="recipient" ref="fisherman3" />
+	</bean>
+
+	<bean id="mailMessage3" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="hello world" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="LOW" />
+		<property name="sender" ref="buyer1" />
+		<property name="recipient" ref="buyer2" />
+	</bean>
+
+	<bean id="mailMessage4" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="hello world" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="LOW" />
+		<property name="sender" ref="buyer2" />
+		<property name="recipient" ref="buyer1" />
+	</bean>
+
+
+	<bean id="mailMessage5" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="hello world" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="LOW" />
+		<property name="sender" ref="buyer2" />
+		<property name="recipient" ref="buyer1" />
+	</bean>
+
+
+	<bean id="mailMessage6" class="domain.MailMessage">
+		<property name="sent" value="11/07/2017" />
+		<property name="subject" value="hello world" />
+		<property name="body" value="it is a mesage important" />
+		<property name="priority" ref="LOW" />
+		<property name="sender" ref="buyer2" />
+		<property name="recipient" ref="buyer1" />
+	</bean>
+
+
+
+	<bean id="offermarket1" class="domain.OfferMarket">
+		<property name="date" value="22/08/2017" />
+		<property name="place" value="Sevilla" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="fishers">
+			<list>
+				<ref bean="fish1" />
+				<ref bean="fish2" />
+			</list>
+		</property>
+		<property name="fisherman" ref="fisherman1" />
+		<property name="isEstatic" value="true" />
+
+	</bean>
+
+	<bean id="offermarket2" class="domain.OfferMarket">
+		<property name="date" value="22/08/2017" />
+		<property name="place" value="Sevilla" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="fishers">
+			<list>
+				<ref bean="fish3" />
+
+			</list>
+		</property>
+
+		<property name="fisherman" ref="fisherman2" />
+		<property name="isEstatic" value="false" />
+
+	</bean>
+
+	<bean id="offermarket3" class="domain.OfferMarket">
+		<property name="date" value="22/08/2017" />
+		<property name="place" value="Sevilla" />
+		<property name="quantity" value="22.22" />
+		<property name="measure" ref="KG" />
+		<property name="price" value="22.22" />
+		<property name="fishers">
+			<list>
+
+			</list>
+		</property>
+		<property name="fisherman" ref="fisherman3" />
+		<property name="isEstatic" value="true" />
+
+	</bean>
+	<bean id="property1" class="domain.Property">
+		<property name="name" value="Fish of water" />
+		<property name="description" value="its a good fish" />
+
+	</bean>
+
+	<bean id="property2" class="domain.Property">
+		<property name="name" value="Fish of water" />
+		<property name="description" value="its a good fish" />
+	</bean>
+
+	<bean id="property3" class="domain.Property">
+		<property name="name" value="Fish of water" />
+		<property name="description" value="its a good fish" />
+
+	</bean>
+	
+	<bean id="property4" class="domain.Property">
+		<property name="name" value="Fish of water 2" />
+		<property name="description" value="its a good fish water" />
+	</bean>
+	
+	<bean id="property5" class="domain.Property">
+		<property name="name" value="Fish of fire 5" />
+		<property name="description" value="its a good fish fire" />
+	</bean>
+	
+	<bean id="fish1" class="domain.Fish">
+		<property name="name" value="magikarp" />
+		<property name="listProperties">
+			<list>
+				<ref bean="property1" />
+				<ref bean="property5" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fish2" class="domain.Fish">
+		<property name="name" value="gambas" />
+		<property name="listProperties">
+			<list>
+				<ref bean="property2" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="fish3" class="domain.Fish">
+		<property name="name" value="boquerones" />
+		<property name="listProperties">
+			<list>
+				<ref bean="property3" />
+				<ref bean="property4" />
+			</list>
+
+
+		</property>
+	</bean>
+
+
+	<bean id="wall1" class="domain.Wall">
+		<property name="name" value="wall 1" />
+		<property name="offer" value="1" />
+	</bean>
+
+	<bean id="wall2" class="domain.Wall">
+		<property name="name" value="wall 2" />
+		<property name="offer" value="2" />
+	</bean>
+	<bean id="wall3" class="domain.Wall">
+		<property name="name" value="wall 3" />
+		<property name="offer" value="3" />
+	</bean>
+
+	<bean id="wall4" class="domain.Wall">
+		<property name="name" value="wall 4" />
+		<property name="offer" value="4" />
+	</bean>
+
+	<bean id="wall5" class="domain.Wall">
+		<property name="name" value="wall 5" />
+		<property name="offer" value="5" />
+	</bean>
+
+	<bean id="wall6" class="domain.Wall">
+		<property name="name" value="wall 6" />
+		<property name="offer" value="6" />
+	</bean>
+	<bean id="wall7" class="domain.Wall">
+		<property name="name" value="wall 7" />
+		<property name="offer" value="7" />
+	</bean>
+	<bean id="wall8" class="domain.Wall">
+		<property name="name" value="wall 8" />
+		<property name="offer" value="8" />
+	</bean>
+	<bean id="wall9" class="domain.Wall">
+		<property name="name" value="wall 9" />
+		<property name="offer" value="9" />
+	</bean>
+	<bean id="wall10" class="domain.Wall">
+		<property name="name" value="wall 10" />
+		<property name="offer" value="10" />
+	</bean>
+	<bean id="wall11" class="domain.Wall">
+		<property name="name" value="wall 11" />
+		<property name="offer" value="11" />
+	</bean>
+	<bean id="wall12" class="domain.Wall">
+		<property name="name" value="wall 12" />
+		<property name="offer" value="12" />
+	</bean>
+	<bean id="wall13" class="domain.Wall">
+		<property name="name" value="wall 13" />
+		<property name="offer" value="13" />
+	</bean>
 </beans>
