@@ -29,7 +29,7 @@ public class OfferMarketController {
 
 	@Autowired
 	OfferMarketService offermarketService;
-	@Autowired
+//	@Autowired
 	ViewResolver viewResolver;
 	
 	@RequestMapping(value = "/actor/favourite", method = RequestMethod.GET)
